@@ -5,17 +5,7 @@ import * as Yup from "yup";
 import { MdEmail } from "react-icons/md";
 import { RiCollapseDiagonal2Fill, RiLockPasswordFill } from "react-icons/ri";
 import Swal from "sweetalert2";
-import { SessionInicial } from "../session";
-import axios from "axios";
-import {
-  collection,
-  addDoc,
-  getDocs,
-  deleteDoc,
-  doc,
-  query,
-  where,
-} from "firebase/firestore";
+
 import { FaNodeJs } from "react-icons/fa";
 import { IoAppsSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
@@ -25,14 +15,7 @@ import {
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import {
-  ConsultaGet,
-  CreatePost,
-  DeleteCookie,
-  getServerCookie,
-  LoginUser,
-  validations,
-} from "./Validaciones";
+import { getServerCookie, LoginUser, validations } from "./Validaciones";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import "./../inicio.css";
@@ -48,6 +31,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { TiCss3 } from "react-icons/ti";
 import { FaGamepad } from "react-icons/fa";
 import { FaSquarePhoneFlip } from "react-icons/fa6";
+
 const SignupSchema = Yup.object().shape({
   nombre: Yup.string()
     .min(2, "Demasiado corto!")
@@ -82,7 +66,7 @@ const useStore = create(
 
 //login
 
-export const Login = ({ session, setAuthprint }) => {
+export const Login = () => {
   const [error, setError] = useState(null);
   const [contadorx, setContador] = useState(1);
   const { sexcount, inc, desinc } = useStore();
@@ -93,7 +77,7 @@ export const Login = ({ session, setAuthprint }) => {
       const user = await LoginUser(Valoreslogin.email, Valoreslogin.password);
       console.log("Usuario logueado:", user);
       if (user) {
-        setAuthprint(user);
+        //debemos recuperar usuario de otra manera
         inc();
       }
       // Redirigir o hacer algo después del login exitoso Millones2090*
@@ -258,7 +242,7 @@ export const Registro = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await response.json();
+      //const data = await response.json();
 
       // Log the response data
 
@@ -269,14 +253,13 @@ export const Registro = () => {
         console.log("Failed to send the email");
       }
     } catch (error) {
-      //console.error("Error sending email:", error); // Improved error logging
     } finally {
       console.log("Email process completed");
     }
   }
 
   return (
-    <>
+    <div>
       <Formik
         initialValues={{
           nombre: "",
@@ -345,13 +328,13 @@ export const Registro = () => {
           </Form>
         )}
       </Formik>
-    </>
+    </div>
   );
 };
 
-export const Unifcado = ({ session, setAuthprint }) => {
+export const Unifcado = () => {
   const [authx, setAuthx] = useState(true);
-  const paso = false;
+
   return (
     <>
       <ul className=" flex">
@@ -373,16 +356,12 @@ export const Unifcado = ({ session, setAuthprint }) => {
           </button>
         </li>
       </ul>
-      {authx ? (
-        <Login session={session} setAuthprint={setAuthprint} />
-      ) : (
-        <Registro />
-      )}
+      {authx ? <Login /> : <Registro />}
     </>
   );
 };
 
-export const DasboarthInico = ({ session, setAuthprint }) => {
+export const DasboarthInico = () => {
   const { sexcount, inc, desinc } = useStore();
   const [cmenu, setCmen] = useState("false");
   const closesession = () => {
@@ -395,6 +374,7 @@ export const DasboarthInico = ({ session, setAuthprint }) => {
       Email: f5extuniversal@gmail.com<br/> Cali colombia.
       `);
   };
+
   const Portafolio = (
     <div className="portafolioData ">
       {linksPro.map((proy) => (
@@ -404,7 +384,13 @@ export const DasboarthInico = ({ session, setAuthprint }) => {
         >
           <a href={proy.link} target="_blank" rel="noopener noreferrer">
             <div className="imgBx ">
-              <img src={proy.img} className="picture" />
+              <img
+                src={proy.img}
+                width={200}
+                height={200}
+                alt="Picture of the author"
+                className="picture"
+              />
             </div>
             <div className="content">
               <h3>{proy.name}</h3>
@@ -513,7 +499,6 @@ export const DasboarthInico = ({ session, setAuthprint }) => {
 };
 
 export default function Xtzxml() {
-  const sessionx = getServerCookie();
   const [cookiesmr, setCookie] = useCookies(["arizona200"]);
   const [authprint, setAuthprint] = useState(cookiesmr);
   const { sexcount, inc, desinc } = useStore();
@@ -526,11 +511,7 @@ export default function Xtzxml() {
       {/*sexcount ? `session estado ${sexcount}` : `session estado ${sexcount}`*/}
 
       {/* <button onClick={inc}>Open session</button>*/}
-      {authprint && sexcount ? (
-        <DasboarthInico session={authprint} setAuthprint={setAuthprint} />
-      ) : (
-        <Unifcado session={authprint} setAuthprint={setAuthprint} />
-      )}
+      {sexcount ? <DasboarthInico /> : <Unifcado />}
     </main>
   );
 }

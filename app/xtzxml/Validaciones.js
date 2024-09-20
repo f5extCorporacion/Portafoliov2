@@ -5,8 +5,6 @@ import {
   collection,
   addDoc,
   getDocs,
-  deleteDoc,
-  doc,
   query,
   where,
   setDoc,
@@ -19,8 +17,6 @@ import {
 } from "firebase/auth";
 
 import { headers, cookies } from "next/headers";
-
-import { redirect } from "next/navigation";
 
 const palabraSecret = "Eluniversoesmifortalezaymedaratodoloquedeseo";
 //validar si existe usuario
@@ -35,10 +31,11 @@ export const validations = async (valores) => {
     return false;
   } else {
     //si el usuario no existe crea el valor
-    CreateUser(valores);
+    await CreateUser(valores);
     return true;
   }
 };
+
 //Crear usuario
 
 export const CreateUser = async (EntradaSi) => {
