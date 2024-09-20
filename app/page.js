@@ -8,7 +8,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { SiChemex } from "react-icons/si";
 import { Perfil } from "./Perfil";
 import "./inicio.css";
-
+import Image from 'next/image'
 export default function Home() {
   const [cmenu, setCmen] = useState("false");
 
@@ -33,8 +33,14 @@ export default function Home() {
             )}
           </div>
         </header>
-
-        <img src="promotor.png" alt="" className=" men" />
+<Image
+      src="/promotor.png"
+      width={200}
+      height={300}
+      alt="Picture of the author"
+      className=" men"
+    />
+       
 
         <div className="content">
           <div className="contentBx">
