@@ -1,7 +1,6 @@
 "use client";
-
+//Actualizacion del codigo
 import React, { useState } from "react";
-
 import { IoAppsSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";

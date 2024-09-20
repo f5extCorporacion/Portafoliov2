@@ -227,7 +227,7 @@ export const Login = () => {
   );
 };
 
-//registro
+//Nuevos registros pagina
 //infinity = mlycaomevnfnanbp
 export const Registro = () => {
   async function myGreeting(formData) {
