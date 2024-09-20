@@ -1,0 +1,63 @@
+react-image-picker-editor
+https://www.npmjs.com/package/react-image-picker-editor
+
+send data by params tutorial
+https://www.youtube.com/watch?v=TFsRd2Aw60Q
+
+hooks reacthttps://react-hook-form.com/docs/useform/formstate
+
+/*Code  Reset passwordt*/
+// Admin SDK API to generate the password reset link.
+const userEmail = 'user@example.com';
+getAuth()
+  .generatePasswordResetLink(userEmail, actionCodeSettings)
+  .then((link) => {
+    // Construct password reset email template, embed the link and send
+    // using custom SMTP server.
+    return sendCustomPasswordResetEmail(userEmail, displayName, link);
+  })
+  .catch((error) => {
+    // Some error occurred.
+  });
+
+  /*----------------------------- codigo creado para emviar codigo al correo*/
+      //se envia correo de reset
+      try {
+        // Method to send email
+        const response = await fetch("/api/resetmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({ email: email, codigo: Code }),
+        });
+        const data = await response.json();
+        console.log(data); // Log the response data
+      } catch (error) {
+        console.log(error);
+      }
+      //termina codigo correo reset
+
+      let i = 0;
+      while (i < 4) {
+        const { value: text } = await Swal.fire({
+          title: "Digita tu codigo",
+          input: "text",
+          inputLabel: `Ingresa a tu correo y digita el codigo aqui , intento ${i}`,
+          inputPlaceholder: "*****",
+        });
+        //envio de correo
+
+        //paso 3
+        let numero = parseInt(text, 10);
+        console.log(numero);
+        if (Code === numero) {
+          // paso 4
+          Swal.fire(`Codigo confirmado ${text}`);
+          i = i + 5;
+        } else {
+          Swal.fire(`Error`);
+        }
+        i++;
+      }
