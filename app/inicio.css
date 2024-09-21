@@ -196,24 +196,22 @@ section::before{
     padding: 1rem;
     gap:1rem;
     height: 100%;
-    padding: 200px;
+    padding: 150px;
 }
-.sectionx .contenidoApp .portafolioPerfil{
-    display: flex;
-    flex-direction: column; 
-    top: -300px;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+
 .sectionx .contenidoApp .portafolioPerfil h2{
     font-size: 30px;
     color: #1de5ff;
 }
 .sectionx .contenidoApp .portafolioPerfil {
+     display: flex;
+      justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 12px;
+    top: -300px;
     color: #cac8c8;
-    width: 96%;
+    width: 100%;
     text-align: justify;
     transition: 1s;
 }
