@@ -707,6 +707,14 @@ font-size: 14px;
      z-index: 2;
      
 }
+.sectionx .contenidoApp{
+    display:flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0;
+    width:100%
+} 
 .sectionx.active::before{
     background: #393b43;
     box-shadow: 0 0 0 1200px #2e3036;
