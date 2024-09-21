@@ -736,7 +736,7 @@ header .toggle{
 .sectionx .contenidoApp .portafolioPerfil {
     font-size: 12px;
     color: #cac8c8;
-    width: 66%;
+    width: 99%;
     text-align: justify;
     transition: 1s;
 }
@@ -786,7 +786,7 @@ padding: 5px;
  .contenidoApp .portafolioPerfil   .portafoliorep{
      display:grid;
      justify-content: center;
-      grid-template-columns: repeat(2, 1fr); 
+      grid-template-columns: repeat(1, 1fr); 
  }
 .sectionx .contenidoApp ul{
     display: flex;
@@ -820,7 +820,7 @@ padding: 5px;
     justify-content: center;
     align-items: center;
     padding:1rem;
-    width:90%;
+    width:100%;
     z-index: 1;
 }
   
