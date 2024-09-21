@@ -712,30 +712,13 @@ font-size: 14px;
     box-shadow: 0 0 0 1200px #2e3036;
     color: aliceblue;
 }
-.sectionx .contenidoApp{
-  
-    
-}
-.sectionx .contenidoApp .portafolioPerfil{
-    display: flex;
-    flex-direction: column;
-    top: 280px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
-}
+
+
 .sectionx .contenidoApp .portafolioPerfil h2{
     font-size: 30px;
     color: #1de5ff;
 }
-.sectionx .contenidoApp .portafolioPerfil {
-    font-size: 12px;
-    color: #cac8c8;
-    width: 99%;
-    text-align: justify;
-    transition: 1s;
-}
+
 .sectionx .contenidoApp .portafolioPerfil span {
     color: #1de5ff;
 }
