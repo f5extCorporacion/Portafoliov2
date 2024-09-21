@@ -8,7 +8,6 @@ import { SiChemex } from "react-icons/si";
 import { Perfil } from "./Perfil";
 import "./inicio.css";
 
-import Image from "next/image";
 
 import Image from 'next/image'
 
