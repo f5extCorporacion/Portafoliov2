@@ -19,6 +19,7 @@ import { getServerCookie, LoginUser, validations } from "./Validaciones";
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import "./../inicio.css";
+import "./../globals.css";
 import { FaPlaystation } from "react-icons/fa";
 import { FaGlassMartiniAlt } from "react-icons/fa";
 import { FaMagic } from "react-icons/fa";
