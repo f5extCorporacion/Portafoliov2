@@ -357,7 +357,9 @@ export const Unifcado = () => {
           </button>
         </li>
       </ul>
+  <div className="centro">
       {authx ? <Login /> : <Registro />}
+  </div>
     </>
   );
 };
