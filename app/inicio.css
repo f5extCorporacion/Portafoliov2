@@ -554,7 +554,7 @@ font-size: 14px;
         font-family: 'Poppins', sans-serif;
     }
   
-    .sectionx{
+    .section{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -564,7 +564,7 @@ font-size: 14px;
     overflow: hidden;
     flex-direction: column;
     }
-.sectionx header{
+ header{
     display: flex;
     position: fixed;
     top: 0;
@@ -577,7 +577,7 @@ font-size: 14px;
     background: #191919;
         opacity: 0.8;
 }
-.sectionx header .logo{
+.section header .logo{
     display: flex;
     font-size: 1.5em;
     color: aliceblue;
@@ -585,14 +585,14 @@ font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
 }
-.sectionx header .logo span{
+ header .logo span{
     color: rgb(5, 241, 241);
     border-bottom: 4px solid rgb(5, 241, 241);
 }
-.sectionx header .logo .in{
+ header .logo .in{
     font-size: 35px;
 }
-.sectionx header .toggle{
+ header .toggle{
     position: relative; 
 }
     
@@ -707,12 +707,12 @@ font-size: 14px;
      z-index: 2;
      
 }
-.sectionx.active::before{
+.section.active::before{
     background: #393b43;
     box-shadow: 0 0 0 1200px #2e3036;
     color: aliceblue;
 }
-.sectionx .contenidoApp{
+.section .contenidoApp{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -723,7 +723,7 @@ font-size: 14px;
     width:100%;
     
 }
-.sectionx .contenidoApp .portafolioPerfil{
+.section .contenidoApp .portafolioPerfil{
     display: flex;
     flex-direction: column;
     top: 280px;
@@ -732,18 +732,18 @@ font-size: 14px;
     align-items: center;
     
 }
-.sectionx .contenidoApp .portafolioPerfil h2{
+.section .contenidoApp .portafolioPerfil h2{
     font-size: 30px;
     color: #1de5ff;
 }
-.sectionx .contenidoApp .portafolioPerfil {
+.section .contenidoApp .portafolioPerfil {
     font-size: 12px;
     color: #cac8c8;
     width: 99%;
     text-align: justify;
     transition: 1s;
 }
-.sectionx .contenidoApp .portafolioPerfil span {
+.section .contenidoApp .portafolioPerfil span {
     color: #1de5ff;
 }
 .contenidoApp .portafolioPerfil ul{
