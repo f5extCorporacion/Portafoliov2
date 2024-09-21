@@ -865,10 +865,9 @@ padding: 5px;
         transform-origin: left;
     }
     .formuniversal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    display: grid;
+   grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    justify-content: center; 
     padding: 1rem;
     transition:1s ;
     width:180px;
