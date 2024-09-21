@@ -868,10 +868,10 @@ padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
     padding: 1rem;
     transition:1s ;
-    width:200px;
+    width:180px;
 }
 .formuniversal p{
     display:flex;
