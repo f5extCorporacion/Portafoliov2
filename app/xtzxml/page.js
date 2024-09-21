@@ -441,8 +441,8 @@ export const DasboarthInico = () => {
         </ul>
 
         {/* Contenido de la pagina web .*/}
-        <div className="contenidoApp  w-[100%] ">
-          <div className="portafolioPerfil   w-[100%]">
+        <div className="contenidoApp  ">
+          <div className="portafolioPerfil  ">
             <h2>PORTAFOLIO</h2>
             <p>
               Cordial saludo soy <span> FRANKLIM DE JESUS MUÑOZ VALVERDE</span>{" "}
