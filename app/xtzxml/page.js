@@ -469,7 +469,9 @@ export const DasboarthInico = () => {
                   <TiCss3 className="mp" />
                 </li>
               </ul>
-            <ul >
+          </div>
+                
+            <ul>
               <li>
                 <a
                   href="https://poki.com/es"
@@ -489,14 +491,10 @@ export const DasboarthInico = () => {
                 </a>{" "}
               </li>
             </ul>
-
-           {Portafolio}
-          </div>
+                    {Portafolio}
         </div>
       </section>
-      <div className="footer">
-        
-      </div>
+   
     </main>
   );
 };
