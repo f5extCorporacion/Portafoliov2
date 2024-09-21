@@ -450,7 +450,8 @@ export const DasboarthInico = () => {
               software desarrollador <span>FULLSTACK</span> y estudiante de
               <span> INGENIERIA INFORMATICA</span> enfocado en desarrollo{" "}
               <span>PERN, MERN , JAVA ,</span> otros.
-              <ul>
+            </p>
+                 <ul>
                 <li>
                   <FaNodeJs className="mp" />
                 </li>
@@ -468,8 +469,7 @@ export const DasboarthInico = () => {
                   <TiCss3 className="mp" />
                 </li>
               </ul>
-            </p>
-            <ul className="p-1">
+            <ul >
               <li>
                 <a
                   href="https://poki.com/es"
