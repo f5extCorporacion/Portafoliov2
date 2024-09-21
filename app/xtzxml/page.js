@@ -405,7 +405,7 @@ export const DasboarthInico = () => {
     </div>
   );
   return (
-    <main className="flex min-h-screen flex-col items-center  ">
+    <main className="flex min-h-screen todoR ">
       <section className={` sectionx bannerx ${cmenu ? "" : "active"}`}>
         <header>
           <a href="#" className="logo">
