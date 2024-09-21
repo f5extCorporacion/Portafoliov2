@@ -750,7 +750,7 @@ font-size: 14px;
     font-size: 30px;
     color: #cac8c8;
   }
-  .contenidoApp .portafolioPerfil ul li a{
+  .contenidoApp ul li a{
 display: flex;
 background: transparent;
 border: solid 1px aqua;
@@ -758,7 +758,7 @@ border-radius: 20px;
 gap: 1rem;
 padding: 5px;
   }
-  .contenidoApp .portafolioPerfil ul li a:hover{
+  .contenidoApp  ul li a:hover{
     display: flex;
     background: rgb(88, 252, 252);
     border: solid 1px rgb(88, 252, 252);
@@ -767,7 +767,7 @@ padding: 5px;
     padding: 5px;
     color: #000;
       }
-  .contenidoApp .portafolioPerfil ul li a p{
+  .contenidoApp  ul li a p{
    font-size: 16px;
       }
     
