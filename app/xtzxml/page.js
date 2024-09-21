@@ -490,7 +490,7 @@ export const DasboarthInico = () => {
               </li>
             </ul>
 
-            <div className="portafoliorep">{Portafolio}</div>
+           {Portafolio}
           </div>
         </div>
       </section>
