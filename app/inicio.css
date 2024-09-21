@@ -884,6 +884,7 @@ padding: 5px;
     border: solid 1px aqua;
     color: #1de5ff;
     padding: 5px;
+    width:185px;
 }
 .formuniversal input:hover{
     background: aqua;
