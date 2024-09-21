@@ -338,7 +338,7 @@ export const Unifcado = () => {
 
   return (
     <>
-      <ul className=" flex">
+      <ul className=" flex px-8 ">
         <li className="flex gap-4 border-b-4 border-slate-400  p-4 rounded-sm">
           <button
             onClick={() => setAuthx(true)}
