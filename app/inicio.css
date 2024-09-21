@@ -721,6 +721,7 @@ header .toggle{
     padding: 1rem;
     gap:1rem;
     height: 100%;
+    width:100%;
     
 }
 .sectionx .contenidoApp .portafolioPerfil{
@@ -730,7 +731,7 @@ header .toggle{
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: auto;
+    
 }
 .sectionx .contenidoApp .portafolioPerfil h2{
     font-size: 30px;
