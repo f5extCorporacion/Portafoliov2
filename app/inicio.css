@@ -785,13 +785,13 @@ padding: 5px;
     height: 180px;
 }
 .contenidoApp .portafolioData {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
     justify-content: center;
     align-items: center;
     padding:1rem;
-    width: 100vh;
-    position: relative;
+   
+    
     z-index: 1;
 }
   
