@@ -752,6 +752,12 @@ padding: 5px;
   .contenidoApp .portafolioPerfil ul li a p{
    font-size: 16px;
       }
+    
+ .contenidoApp .portafolioPerfil   .portafoliorep{
+     display:grid;
+     justify-content: center;
+      grid-template-columns: repeat(2, 1fr); 
+ }
 .sectionx .contenidoApp ul{
     display: flex;
     gap: 1rem;
