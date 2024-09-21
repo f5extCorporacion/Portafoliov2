@@ -553,11 +553,17 @@ font-size: 14px;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
+    .todoR{
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    width:240px;
+    }
     .sectionx{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 0 90px;
+    padding: 0 100px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -713,12 +719,11 @@ header .toggle{
 }
 .sectionx .contenidoApp{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
-    gap:1rem;
+    gap:10px;
     height: 100%;
     width:100%;
     
@@ -726,7 +731,7 @@ header .toggle{
 .sectionx .contenidoApp .portafolioPerfil{
     display: flex;
     flex-direction: column;
-    top: 300px;
+    top: 280px;
     width: 100%;
     justify-content: center;
     align-items: center;
