@@ -495,7 +495,7 @@ export const DasboarthInico = () => {
         </div>
       </section>
       <div className="footer">
-        <p>Todos los derechos reservados creado 2024 </p>
+        
       </div>
     </main>
   );
