@@ -714,7 +714,7 @@ font-size: 14px;
 .sectionx .contenidoApp .portafolioPerfil{
     display:flex;
     flex-direction: column;
-    width:100%
+    width:100%;
     padding:1rem;
 }
 
