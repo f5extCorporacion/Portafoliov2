@@ -540,6 +540,71 @@ opacity: 1;
 text-align: justify;
 font-size: 14px;
   }
+      /* inicio juegos*/
+ .sectionx .contenidoApp .juegos{
+  display: flex;
+  position: relative;
+  z-index: 1;
+ }
+ .sectionx .contenidoApp .juegos li  {
+    color: #cac8c8;
+    text-decoration: none;
+    background: transparent;
+    border: solid 1px aqua;
+    border-radius: 20px;
+   }
+   .sectionx .contenidoApp .juegos li a {
+    display: flex;
+    color: #cac8c8;
+    text-decoration: none;
+    background: transparent;
+    gap: 2px;
+   }
+   .sectionx .contenidoApp .juegos li a .mp{
+    color: #cac8c8;
+    font-size: 30px;
+   }
+   .sectionx .contenidoApp .juegos li:hover  {
+    display: flex;
+    color: #0f0f0f;
+    text-decoration: none;
+    background: aqua;
+    gap: 2px;
+    filter: drop-shadow(0px 1px 10px aqua);
+    border: solid 1px aqua;
+    border-radius: 20px;
+   }
+   /*fin juegos*/ 
+     /* inicio juegos*/
+ .sectionx .contenidoApp .portafolioPerfil  ul{
+  display: flex;
+ flex-wrap:wrap;
+  position: relative;
+  z-index: 1;
+ }
+ .sectionx .contenidoApp .portafolioPerfil  ul li  {
+    color: #cac8c8;
+    text-decoration: none;
+    background: transparent;
+    border: solid 1px aqua;
+    border-radius: 20px;
+   }
+  
+   .sectionx .contenidoApp .portafolioPerfil ul li a .mp{
+    color: #cac8c8;
+    font-size: 30px;
+   }
+   .sectionx .contenidoApp .portafolioPerfil ul li:hover  {
+    display: flex;
+    color: #0f0f0f;
+    text-decoration: none;
+    background: aqua;
+    gap: 2px;
+    filter: drop-shadow(0px 1px 10px aqua);
+    border: solid 1px aqua;
+    border-radius: 20px;
+   }
+   /*fin juegos*/ 
 /* fin Card container*/
 
 /*now, make it responsive*/
