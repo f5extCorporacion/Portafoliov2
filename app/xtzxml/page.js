@@ -366,10 +366,15 @@ export const DasboarthInico = () => {
   };
 
   const contacto = () => {
-    Swal.fire(` Franklim de jesus valverde <br/>
-      Cel: +57 302 213 03 74 <br/>
-      Email: f5extuniversal@gmail.com<br/> Cali colombia.
-      `);
+    Swal.fire({
+    html: `<h1>Contacto</h1>
+    <ul>
+    <li>Creador : franklim de jesus muñoz valverde</li>
+    <li>Telefono : +57 302 213 03 74</li>
+    <li>Cali - colombia</li>
+    </ul>
+    `,
+});
   };
 
   const Portafolio = (
