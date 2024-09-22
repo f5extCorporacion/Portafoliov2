@@ -898,5 +898,361 @@ padding: 5px;
 .formuniversal .reset  .resetpasswordt{
     color: #1de5ff;
 }
- 
+  
 }
+
+  @media (max-width:344px){
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+  
+    .sectionx{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    }
+ header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    background: #191919;
+        opacity: 0.8;
+}
+.sectionx header .logo{
+    display: flex;
+    font-size: 1.5em;
+    color: aliceblue;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ header .logo span{
+    color: rgb(5, 241, 241);
+    border-bottom: 4px solid rgb(5, 241, 241);
+}
+ header .logo .in{
+    font-size: 35px;
+}
+ header .toggle{
+    position: relative; 
+}
+    
+    /*Card container*/
+.cardItems {
+    width: 99px;
+    height: 99px;
+    background: #1c1c1c;
+    border-radius: 40px;
+    box-shadow: 0 20px 25px rgba(0,0, 0, 0.25);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .cardItems a{
+    text-decoration: none;
+    text-align: justify;
+  }
+  .cardItems:hover{
+      height: 200px;
+  } 
+  .cardItems .imgBx {
+     position: relative;
+     width: 100%;
+     height: 180px;
+     background: #191919;
+     
+    }
+    .cardItems .imgBx .picture{
+     height: 99px;
+      width:100%;
+      background-size: 100%;
+      background-position: center;
+      transition: 0.5s;
+    }
+    
+    .cardItems .imgBx:hover .picture{
+      background-size: 110%;
+    }
+  
+    .cardItems .imgBx::before {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      width: 100%;
+      height: 80px;
+      border-radius: 40px;
+      background: #191919;
+    }
+    .cardItems .imgBx::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 40px;
+      width: 80px;
+      height: 80px;
+      background: transparent;
+      border-radius: 50%;
+      box-shadow: 75px 70px 0 40px #191919;
+    }
+    .cardItems .content {
+      position: relative;
+      top: -40px;
+      z-index: 10;
+      padding: 0 30px;
+      transition: 0.5s;
+    }
+    .cardItems .content  h3{
+     
+      font-size: 1.25em;
+      color: #fffbfb;
+    }
+  
+    .cardItems .content  p{
+  position: relative;
+  opacity: 0;
+  transition: 0.5s;
+  color: #0ae9ae;
+    }
+    .cardItems:hover .content  p{
+  opacity: 1;
+  text-align: justify;
+  font-size: 10px;
+    }
+    .cardItems .content ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        gap: 1px;
+      }
+      .cardItems .content ul li .mp{
+        font-size: 20px;
+        color: #cac8c8;
+      }
+    
+.sectionx::before{
+    content: '';
+    position: absolute;
+    top: 200px;
+    width: 1px;
+    height: 1px;
+    transform: translateY(20%);
+    right: 70px;
+    background: rgb(18, 19, 19);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(34, 35, 35),
+     0 0 50px rgb(26, 26, 26) ,
+     0 0 150px rgb(25, 26, 26) ;
+     top: 130px;
+     transition: 1s;
+     opacity: 1;
+     z-index: 2;
+     
+}
+
+.sectionx.active::before{
+    background: #393b43;
+    box-shadow: 0 0 0 1200px #2e3036;
+    color: aliceblue;
+}
+.sectionx .contenidoApp .portafolioPerfil{
+    display:flex;
+    flex-direction: column;
+    width:100%
+    padding:1rem;
+}
+
+.sectionx .contenidoApp .portafolioPerfil h2{
+    font-size: 30px;
+    color: #1de5ff;
+}
+
+.sectionx .contenidoApp .portafolioPerfil span {
+    color: #1de5ff;
+}
+.contenidoApp .portafolioPerfil ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .contenidoApp .portafolioPerfil ul li {
+    font-size: 30px;
+    color: #cac8c8;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenidoApp .portafolioPerfil ul li .mp{
+    font-size: 30px;
+    color: #cac8c8;
+  }
+  .contenidoApp ul li a{
+display: flex;
+background: transparent;
+border: solid 1px aqua;
+border-radius: 20px;
+gap: 1rem;
+padding: 5px;
+  }
+  .contenidoApp  ul li a:hover{
+    display: flex;
+    background: rgb(88, 252, 252);
+    border: solid 1px rgb(88, 252, 252);
+    border-radius: 20px;
+    gap: 1rem;
+    padding: 5px;
+    color: #000;
+      }
+  .contenidoApp  ul li a p{
+   font-size: 16px;
+      }
+    
+
+.sectionx .contenidoApp ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    z-index: -1;
+    flex-wrap: wrap;
+}
+.sectionx .contenidoApp ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    transition: 1s;
+}
+.sectionx .contenidoApp ul li:hover{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    filter: drop-shadow( 0px 0px 10px, rgb(128, 2, 170));
+}
+.sectionx .contenidoApp ul li .iconPorta{
+    width: 180px;
+    height: 180px;
+}
+.contenidoApp .portafolioData {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    justify-content: center;
+    align-items: center;
+   
+    width:100%;
+    z-index: 1;
+}
+  
+    .banner .men{
+        position: absolute;
+     width: 150px;
+     bottom: 20%;
+     right: 88px;
+     filter: drop-shadow(0px 0px 1px rgb(5, 241, 241));
+     transition: 1s;
+     opacity:0.4 ;
+    }
+
+    .sectionx .contenidoApp ul li .iconPorta{
+        width: 120px;
+        height: 120px;
+    }
+
+    .banner .content{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        top: 25%;
+        padding: 1rem;
+        padding: 10px 20px;
+    }
+    .banner .content .contentBx h4{
+        font-weight: 600;
+        color: aqua;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+    .banner .content .contentBx h2{
+        font-size: 1em;
+        line-height: 1em;
+        color: #fff;
+      }
+      .banner .content .contentBx h3{
+          font-weight: 300;
+          color: #fff;
+          font-size: 1em;
+          line-height: 1.5em;
+      }
+      .banner .content .contentBx p{
+         font-size: 16px;
+         color: #fff;
+         margin: 5px 0;
+         text-align: justify; 
+      }
+      .banner .sci{
+        position: absolute;
+        bottom: -46px;
+        left:6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        transition: 0.5s;
+        gap: 10px;
+        transform-origin: left;
+    }
+    .formuniversal{
+    display: grid;
+   grid-template-columns: repeat(1, 1fr); /* 2 columnas iguales */
+    justify-content: center; 
+    padding: 2rem;
+    transition:1s ;
+    width:199px;
+}
+.formuniversal p{
+    display:flex;
+    padding: 9px;
+}
+.formuniversal input{
+    font-size: 19px;
+    border-radius: 20px;
+    background: transparent;
+    border: solid 1px aqua;
+    color: #1de5ff;
+    padding: 5px;
+    width:180px;
+    
+}
+.formuniversal input:hover{
+    background: aqua;
+   filter: drop-shadow( 3px 5px 10px aqua);
+   transition: 0.8s;
+   border: solid 1px aqua;
+   color: #000;
+}
+.formuniversal .reset .resetpasswordt span{
+    font-size: 9px;
+}
+.formuniversal .reset  .resetpasswordt{
+    color: #1de5ff;
+}  
+    }
