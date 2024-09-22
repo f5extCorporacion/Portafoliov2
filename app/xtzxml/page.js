@@ -464,27 +464,26 @@ export const DasboarthInico = () => {
                 </li>
               </ul>
           </div>
-                
-            <ul>
-              <li>
-                <a
-                  href="https://poki.com/es"
-                  className="bg-teal-500 hover:bg-teal-600 active:bg-teal-700 focus:outline-none focus:ring focus:ring-violet-300 ..."
-                >
-                  <FaGamepad className="mp" />
-                  <p>Juegos</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={contacto}
-                  className="bg-teal-500 hover:bg-teal-600 active:bg-teal-700 focus:outline-none focus:ring focus:ring-violet-300 ..."
-                >
-                  <FaSquarePhoneFlip className="mp" />
-                  <p>Contacto</p>
-                </a>{" "}
-              </li>
-            </ul>
+         <ul className="juegos">
+            <li>
+              <a
+                href="https://poki.com/es"
+                className="bg-teal-500 hover:bg-teal-600 active:bg-teal-700 focus:outline-none focus:ring focus:ring-violet-300 ..."
+              >
+                <FaGamepad className="mp" />
+                <p>Juegos</p>
+              </a>
+            </li>
+            <li>
+              <a
+                onClick={contacto}
+                className="bg-teal-500 hover:bg-teal-600 active:bg-teal-700 focus:outline-none focus:ring focus:ring-violet-300 ..."
+              >
+                <FaSquarePhoneFlip className="mp" />
+                <p>Contacto</p>
+              </a>{" "}
+            </li>
+          </ul>
                     {Portafolio}
         </div>
       </section>
