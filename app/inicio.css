@@ -596,8 +596,8 @@ font-size: 14px;
     
     /*Card container*/
 .cardItems {
-    width: 190px;
-    height: 190px;
+    width: 300px;
+    height: 300px;
     min-width: 100px;
     background: #1c1c1c;
     border-radius: 40px;
@@ -795,7 +795,7 @@ padding: 5px;
 }
 .contenidoApp .portafolioData {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
     justify-content: center;
     align-items: center;
    
