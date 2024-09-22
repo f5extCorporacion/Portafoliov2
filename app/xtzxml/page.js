@@ -5,7 +5,6 @@ import * as Yup from "yup";
 import { MdEmail } from "react-icons/md";
 import { RiCollapseDiagonal2Fill, RiLockPasswordFill } from "react-icons/ri";
 import Swal from "sweetalert2";
-
 import { FaNodeJs } from "react-icons/fa";
 import { IoAppsSharp } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
@@ -64,8 +63,6 @@ const useStore = create(
     }
   )
 );
-
-//login
 
 export const Login = () => {
   const [error, setError] = useState(null);
@@ -138,7 +135,6 @@ export const Login = () => {
         });
     }
   };
-
   return (
     <>
       <Formik
@@ -242,8 +238,6 @@ export const Registro = () => {
         },
         body: JSON.stringify(formData),
       });
-
-      //const data = await response.json();
 
       // Log the response data
 
