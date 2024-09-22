@@ -764,22 +764,37 @@ font-size: 14px;
     border-radius: 20px;
    }
    /*fin juegos*/ 
-.contenidoApp .portafolioPerfil ul{
+     /* inicio juegos*/
+ .sectionx .contenidoApp .portafolioPerfil  ul{
+  display: flex;
+ flex-wrap:wrap;
+  position: relative;
+  z-index: 1;
+ }
+ .sectionx .contenidoApp .portafolioPerfil  ul li  {
+    color: #cac8c8;
+    text-decoration: none;
+    background: transparent;
+    border: solid 1px aqua;
+    border-radius: 20px;
+   }
+  
+   .sectionx .contenidoApp .portafolioPerfil ul li a .mp{
+    color: #cac8c8;
+    font-size: 30px;
+   }
+   .sectionx .contenidoApp .portafolioPerfil ul li:hover  {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .contenidoApp .portafolioPerfil ul li {
-    font-size: 30px;
-    color: #cac8c8;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenidoApp .portafolioPerfil ul li .mp{
-    font-size: 30px;
-    color: #cac8c8;
-  }
+    color: #0f0f0f;
+    text-decoration: none;
+    background: aqua;
+    gap: 2px;
+    filter: drop-shadow(0px 1px 10px aqua);
+    border: solid 1px aqua;
+    border-radius: 20px;
+   }
+   /*fin juegos*/ 
+
   .contenidoApp ul li a{
 display: flex;
 background: transparent;
