@@ -901,7 +901,7 @@ padding: 5px;
   
 }
 
-  @media (max-width:344px){
+  @media (max-width:500px){
       *{
         margin: 0;
         padding: 0;
@@ -1153,7 +1153,7 @@ padding: 5px;
     justify-content: center;
     align-items: center;
    
-    width:100%;
+    width:90%;
     z-index: 1;
 }
   
