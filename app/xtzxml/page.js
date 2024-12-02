@@ -506,7 +506,7 @@ export default function Xtzxml() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-17 text-slate-100">
+    <main className="flex min-h-screen flex-col items-center p-17 text-slate-100 bg-black " style={{backgroundColor: 'black',color: 'white'}} >
       {/*sexcount ? `session estado ${sexcount}` : `session estado ${sexcount}`*/}
 
       {/* <button onClick={inc}>Open session</button>*/}
