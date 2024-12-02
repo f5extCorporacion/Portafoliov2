@@ -136,7 +136,7 @@ export const Login = () => {
     }
   };
   return (
-    <>
+    <div style={{backgroundColor: 'black',color: 'white'}}>
       <Formik
         initialValues={{ email: "", password: "" }}
         validate={(values) => {
@@ -220,7 +220,7 @@ export const Login = () => {
           </span>
         </button>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -254,7 +254,7 @@ export const Registro = () => {
   }
 
   return (
-    <div>
+    <div  style={{backgroundColor: 'black',color: 'white'}}>
       <Formik
         initialValues={{
           nombre: "",
@@ -331,7 +331,7 @@ export const Unifcado = () => {
   const [authx, setAuthx] = useState(true);
 
   return (
-    <>
+    <div  style={{backgroundColor: 'black',color: 'white'}}>
       <ul className=" flex px-8 ">
         <li className="flex gap-4 border-b-4 border-slate-400  p-4 rounded-sm">
           <button
@@ -354,7 +354,7 @@ export const Unifcado = () => {
   <div className="centro">
       {authx ? <Login /> : <Registro />}
   </div>
-    </>
+    </div>
   );
 };
 
@@ -404,7 +404,7 @@ export const DasboarthInico = () => {
     </div>
   );
   return (
-    <main className="flex min-h-screen flex-col items-center p-17 text-slate-100 w-[100%] ">
+    <main className="flex min-h-screen flex-col items-center p-17 text-slate-100 w-[100%] bg-back "  style={{backgroundColor: 'black',color: 'white'}}>
       <section className={` sectionx bannerx ${cmenu ? "" : "active"}`}>
         <header>
           <a href="#" className="logo">
