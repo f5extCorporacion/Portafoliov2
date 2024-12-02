@@ -15,7 +15,7 @@ export default function Home() {
   const [cmenu, setCmen] = useState("false");
 
   return (
-    <main className="flex min-h-screen bg-black-900" style={{backgroundColor: 'black',color: 'white'}}>
+    <main className="flex min-h-screen bg-black " style={{backgroundColor: 'black',color: 'white'}}>
       <section className={`banner ${cmenu ? "" : "active"}`}>
         <header>
           <a href="#" className="logo">
